@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="heroArtTitle">
+  <title id="heroArtTitle">Futuristic hex grid background</title>
+  <defs>
+    <linearGradient id="lg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <pattern id="hex" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="translate(0)">
+      <polygon points="30,0 60,15 60,37 30,52 0,37 0,15" fill="none" stroke="url(#lg)" stroke-width="1.2" opacity=".38"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="560" fill="#0b1220"/>
+  <rect width="960" height="560" fill="url(#hex)"/>
+  <circle cx="760" cy="120" r="140" fill="url(#lg)" opacity=".18"/>
+  <circle cx="180" cy="440" r="120" fill="#10b981" opacity=".12"/>
+</svg>

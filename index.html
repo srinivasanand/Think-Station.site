@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Think-Station — Lab-Grade Tech Experiments</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Think-Station.site — a playful, futuristic mini-lab showcasing experiments, tools, and demos from a fictitious engineering team. Experiments that ship." />
+    <link rel="canonical" href="https://think-station.site/" />
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Think-Station — Experiments that ship." />
+    <meta property="og:description" content="A glossy-futuristic landing page for lab-grade tech experiments." />
+    <meta property="og:image" content="assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Think-Station — Experiments that ship." />
+    <meta name="twitter:description" content="A glossy-futuristic landing page for lab-grade tech experiments." />
+    <meta name="twitter:image" content="assets/og-cover.png" />
+
+    <!-- Manifest (inline stub to preserve exact repo structure) -->
+    <link rel="manifest" href='data:application/manifest+json,{"name":"Think-Station","short_name":"Think-Station","start_url":"/","display":"standalone","background_color":"%23ffffff","theme_color":"%23111827","icons":[{"src":"assets/favicon-32.png","sizes":"32x32","type":"image/png"},{"src":"assets/favicon-512.png","sizes":"512x512","type":"image/png"}]}'>
+
+    <!-- Favicon suite -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="assets/favicon-512.png">
+
+    <!-- Fonts (optional external) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- ====== Header / Sticky Nav ====== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Think-Station home" data-track="brand-logo">
+          <img src="assets/logo.svg" width="148" height="32" alt="Think-Station logo" />
+        </a>
+
+        <nav aria-label="Primary" class="primary-nav">
+          <ul>
+            <li><a href="#home" data-track="nav-home">Home</a></li>
+            <li><a href="#features" data-track="nav-features">Features</a></li>
+            <li><a href="#showcase" data-track="nav-showcase">Showcase</a></li>
+            <li><a href="#roadmap" data-track="nav-roadmap">Roadmap</a></li>
+            <li><a href="#faq" data-track="nav-faq">FAQ</a></li>
+            <li><a href="#contact" data-track="nav-contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn ghost" type="button" aria-pressed="false" data-track="toggle-theme" title="Toggle color theme">
+            <span class="icon-sun" aria-hidden="true"></span><span class="sr-only">Toggle light/dark theme</span>
+          </button>
+          <a class="btn primary" href="#showcase" data-track="nav-cta">View Experiments</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="site-main" role="main">
+      <!-- ====== Hero ====== -->
+      <section class="section hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">Think-Station — Experiments that ship.</h1>
+            <p class="lead">
+              A playful, futuristic mini-lab for <strong>AI Demos</strong>, <strong>Cloud Blueprints</strong>, and <strong>Security Labs</strong>. Built for clarity, speed, and a strong visual identity.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#showcase" data-track="cta-view-experiments">View Experiments</a>
+              <a class="btn outline" href="#contact" data-track="cta-get-repo">Get Repo</a>
+            </div>
+            <ul class="badges">
+              <li><span class="badge">Fast</span></li>
+              <li><span class="badge">Accessible</span></li>
+              <li><span class="badge">No build step</span></li>
+            </ul>
+          </div>
+          <figure class="hero-art">
+            <img src="assets/illustrations/hero-bg.svg" alt="Futuristic hex-grid lab illustration" width="720" height="480" />
+          </figure>
+          <div class="hero-decor" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- ====== Feature Grid ====== -->
+      <section id="features" class="section features" aria-labelledby="features-title">
+        <div class="container">
+          <h2 id="features-title">What’s inside the lab</h2>
+          <p class="subhead">Minimal, glossy-futuristic UI with motion that respects your preferences.</p>
+
+          <div class="feature-grid">
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>AI Demos</h3>
+              <p>Small, focused experiments with clear UX and fast feedback.</p>
+            </article>
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>Cloud Blueprints</h3>
+              <p>Deployable patterns for scalable, resilient app stacks.</p>
+            </article>
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>Security Labs</h3>
+              <p>Safe sandboxes for auth, policy, and telemetry workflows.</p>
+            </article>
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>Design System</h3>
+              <p>Tokenized palette, semantic spacing, and accessible components.</p>
+            </article>
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>Zero-Config</h3>
+              <p>Pure static files. GitHub Pages-ready in minutes.</p>
+            </article>
+            <article class="card">
+              <img class="icon" src="assets/illustrations/features-cubes.svg" alt="" aria-hidden="true" />
+              <h3>Open Source</h3>
+              <p>MIT-licensed. Fork, remix, and ship your own.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Showcase (CSS carousel) ====== -->
+      <section id="showcase" class="section showcase" aria-labelledby="showcase-title">
+        <div class="container">
+          <h2 id="showcase-title">Showcase</h2>
+          <p class="subhead">Three tiny demos presented as cards in a pure-CSS carousel.</p>
+
+          <div class="carousel" role="region" aria-label="Showcase carousel">
+            <!-- Controls (radio) -->
+            <input type="radio" name="carousel" id="c1" checked aria-hidden="true" />
+            <input type="radio" name="carousel" id="c2" aria-hidden="true" />
+            <input type="radio" name="carousel" id="c3" aria-hidden="true" />
+
+            <!-- Slides -->
+            <div class="slides">
+              <figure class="slide">
+                <img src="assets/illustrations/features-cubes.svg" alt="AI Demo card art" width="480" height="320" />
+                <figcaption>
+                  <strong>AI: Prompt Playground</strong>
+                  <span>Lightweight prompt patterns with guardrails.</span>
+                </figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/illustrations/roadmap-steps.svg" alt="Cloud blueprint art" width="480" height="320" />
+                <figcaption>
+                  <strong>Cloud: Static + Functions</strong>
+                  <span>Jamstack-style blueprint with CI hooks.</span>
+                </figcaption>
+              </figure>
+              <figure class="slide">
+                <img src="assets/illustrations/footer-badge.svg" alt="Security lab art" width="480" height="320" />
+                <figcaption>
+                  <strong>Security: Auth Flows</strong>
+                  <span>Token exchange demos with mock IdP.</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Pagination -->
+            <div class="dots" role="tablist" aria-label="Slides">
+              <label for="c1" role="tab" aria-controls="c1" data-track="carousel-dot-1"><span class="sr-only">Slide 1</span></label>
+              <label for="c2" role="tab" aria-controls="c2" data-track="carousel-dot-2"><span class="sr-only">Slide 2</span></label>
+              <label for="c3" role="tab" aria-controls="c3" data-track="carousel-dot-3"><span class="sr-only">Slide 3</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== Roadmap / Timeline ====== -->
+      <section id="roadmap" class="section roadmap" aria-labelledby="roadmap-title">
+        <div class="container">
+          <h2 id="roadmap-title">Roadmap</h2>
+          <ol class="timeline" role="list">
+            <li class="reveal">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Ideate</h3>
+                <p>Draft use-cases, guardrails, and visible success metrics.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Prototype</h3>
+                <p>Build minimum lovable demos with clear instrumentation.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Validate</h3>
+                <p>Collect telemetry, run usability checks, and harden edges.</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="content">
+                <h3>Ship</h3>
+                <p>Document, version, and publish with crisp release notes.</p>
+              </div>
+            </li>
+          </ol>
+          <figure class="roadmap-art">
+            <img src="assets/illustrations/roadmap-steps.svg" alt="Vertical steps illustration" width="640" height="240" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ====== Testimonial ====== -->
+      <section class="section testimonial" aria-labelledby="testi-title">
+        <div class="container card glass">
+          <div class="avatar">
+            <img src="assets/illustrations/avatar.svg" alt="Avatar placeholder" width="64" height="64" />
+          </div>
+          <blockquote>
+            <h2 id="testi-title" class="sr-only">Testimonial</h2>
+            <p>“Clean architecture, beautiful motion, and docs that respect engineers. We forked it and shipped within a day.”</p>
+            <footer>— The Think-Station Crew</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ====== FAQ (accordion) ====== -->
+      <section id="faq" class="section faq" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title">FAQ</h2>
+          <div class="accordion" role="region" aria-labelledby="faq-title">
+            <!-- Item -->
+            <div class="accordion-item">
+              <h3>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq1" id="faq1-label">
+                  How is this hosted?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-panel" role="region" aria-labelledby="faq1-label" hidden>
+                <p>Pure static files on GitHub Pages. No server runtime, no build step.</p>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item">
+              <h3>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq2" id="faq2-label">
+                  What’s the license?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-panel" role="region" aria-labelledby="faq2-label" hidden>
+                <p>MIT. See the <a href="#contact" data-track="faq-license">README</a> for full text.</p>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item">
+              <h3>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq3" id="faq3-label">
+                  How do I add a new experiment?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-panel" role="region" aria-labelledby="faq3-label" hidden>
+                <p>Duplicate a card in the Showcase and link it to your demo folder. Update copy and artwork.</p>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item">
+              <h3>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq4" id="faq4-label">
+                  How do I change the theme?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-panel" role="region" aria-labelledby="faq4-label" hidden>
+                <p>Edit CSS variables in <code>css/styles.css</code>. Toggle light/dark via the sun icon.</p>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item">
+              <h3>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq5" id="faq5-label">
+                  How do I deploy?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-panel" role="region" aria-labelledby="faq5-label" hidden>
+                <p>Commit to <code>main</code>, enable Pages (root), and you’re live. Steps in README.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== CTA Banner ====== -->
+      <section id="contact" class="section cta" aria-labelledby="cta-title">
+        <div class="container cta-wrap">
+          <h2 id="cta-title">Like this? Star the repo or try a demo.</h2>
+          <div class="cta-actions">
+            <a class="btn primary" href="#showcase" data-track="cta-try-demo">Try a Demo</a>
+            <a class="btn emerald" href="#" data-track="cta-star-repo" aria-label="Star the GitHub repository (placeholder)">Star the Repo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="brandline">
+          <img src="assets/illustrations/footer-badge.svg" alt="" aria-hidden="true" />
+          <p>© <span id="year"></span> Think-Station.site — MIT License</p>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="#" aria-label="GitHub" data-track="social-github">
+              <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.6c0 5.3 3.4 9.8 8.2 11.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.5-4-1.5c-.6-1.4-1.4-1.8-1.4-1.8c-1.2-.8.1-.8.1-.8c1.3.1 2 .9 2 .9c1.1 2 2.9 1.4 3.6 1.1c.1-.8.4-1.4.7-1.7c-2.6-.3-5.4-1.3-5.4-5.9c0-1.3.5-2.4 1.2-3.3c-.1-.3-.5-1.6.1-3.3c0 0 1-.3 3.3 1.2c1-.3 2-.4 3.1-.4s2.1.1 3.1.4c2.3-1.5 3.3-1.2 3.3-1.2c.6 1.7.2 3 .1 3.3c.8.9 1.2 2 1.2 3.3c0 4.6-2.8 5.6-5.4 5.9c.4.4.8 1.1.8 2.3v3.4c0 .3.2.7.8.6A12 12 0 0 0 24 12.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="X (Twitter)" data-track="social-x">
+              <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M18.3 2H21l-6.3 7.2L22 22h-6.9l-4.6-6l-5.2 6H3.6l6.8-7.9L2 2h7l4.2 5.6L18.3 2Zm-1.2 18h1.9L7.1 4H5.1l12 16Z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn" data-track="social-linkedin">
+              <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M6.94 7.94H3.87V20h3.07V7.94ZM5.4 6.6a1.77 1.77 0 1 0 0-3.54a1.77 1.77 0 0 0 0 3.54Zm9.7 5.18c1.59 0 2.78 1.04 2.78 3.25V20h3.07v-5.5c0-4.31-2.23-6.32-5.21-6.32c-2.4 0-3.47 1.33-4.06 2.26v-2h-3.02V20h3.02v-5.9c.46-.89 1.49-2.32 3.42-2.32Z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top" data-track="back-to-top">↑</button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

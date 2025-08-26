@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="cubesTitle">
+  <title id="cubesTitle">Isometric cubes</title>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(20,16)" fill="none" stroke="url(#g1)" stroke-width="3">
+    <path d="M36 0l36 20v40L36 80 0 60V20z"/>
+    <path d="M88 24l36 20v40l-36 20-36-20V44z" opacity=".7"/>
+    <path d="M62 54l36 20v40l-36 20-36-20V74z" opacity=".5"/>
+  </g>
+</svg>
